@@ -39,6 +39,20 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
+" Conquer Of Completion plugin
+Plugin 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+" Vim Polyglot
+Plugin 'sheerun/vim-polyglot'
+
+" Polyglot plugins
+Plugin 'elzr/vim-json'
+Plugin 'pangloss/vim-javascript'
+Plugin 'groenewege/vim-less'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'StanAngeloff/php.vim'
+Plugin 'amadeus/vim-xml'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -107,3 +121,31 @@ endif
 nmap <F8> :TagbarToggle<CR>
 
 filetype plugin indent on
+
+" Miscs
+
+" force unix fileformat
+set fileformat=unix
+
+" make swapfiles be kept in a central location to avoid polluting file system
+set directory^=$HOME/.vim/swapfiles//
+
+" use undodir for persistent undoing across file closure
+set undodir=~/.vim/undodir
+set undofile
+
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> for trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
