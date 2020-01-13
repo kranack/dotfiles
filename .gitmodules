@@ -4,6 +4,6 @@
 	branch = master
 
 [submodule "nerd-fonts"]
-	path = nerd-fonts
-	url = https://github.com/ryanoasis/nerd-fonts
+	path = nerd-fonts/patched-fonts/FiraCode
+	url = https://github.com/kranack/FiraCode
 	branch = master
