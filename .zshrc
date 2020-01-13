@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/damiencalesse/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Neofetch
 neofetch
@@ -110,23 +110,25 @@ POWERLEVEL9K_CARRIAGE_RETURN_ICON=$'\uf165'
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  brew
+  osx
   git
   github
   gulp
   jira
   osx
   node
+  yarn-completion
   svn
   vscode
   composer
+  colorize
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+# export MANPATH="usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -152,3 +154,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export PATH="/usr/local/sbin:/usr/local/bin:$HOME/.oh-my-zsh:$PATH"
+
+source ~/.zsh_aliases
+
+export NVM_DIR="$HOME/.oh-my-zsh"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion"
+source $(brew --prefix nvm)/nvm.sh

@@ -1,0 +1,5 @@
+alias brew_update="brew update"
+alias brew_upgrade="brew upgrade && brew cask upgrade"
+alias upgrade="brew_upgrade && pecl upgrade"
+
+alias lint_tool="~/Documents/dev/php/lint-tools/lint-tool"

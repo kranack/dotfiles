@@ -1,3 +1,4 @@
+set termguicolors
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -23,6 +24,12 @@ Plugin 'powerline/fonts'
 
 " One Half Theme
 Plugin 'sonph/onehalf', {'rtp': 'vim/'}
+" Two Firewatch Theme
+Plugin 'rakr/vim-two-firewatch'
+" Alduin Theme
+Plugin 'alessandroyorba/alduin'
+" Edge Theme
+Plugin 'sainnhe/edge'
 
 " -- code check
 Plugin 'scrooloose/syntastic'
@@ -78,7 +85,16 @@ set shiftwidth=4
 set smarttab
 set splitright
 
-colorscheme onehalfdark
+" colorscheme onehalfdark
+
+" Alduin theme customization
+"let g:alduin_Shout_Dragon_Aspect = 1
+"let g:alduin_Shout_Fire_Breath = 1
+
+set background=dark
+"colorscheme alduin
+" colorscheme two-firewatch
+colorscheme edge
 
 " Plugin Airline settings
 " let g:airline_section_b = '%{strftime("%c")}'
@@ -98,6 +114,9 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 " let g:airline_theme             = 'papercolor'
 let g:airline_theme='onehalfdark'
+
+" let g:two_firewatch_italics=1
+" let g:airline_theme='twofirewatch'
 
 let g:indent_guides_guide_size = 1
 

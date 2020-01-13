@@ -1,5 +1,15 @@
 # Dotfiles
 
+## Install
+
+Just launch the script in scripts folder
+
+### OSX
+
+```bash
+./scripts/install-osx.sh
+```
+
 ## Vim
 
 ### Dependencies
