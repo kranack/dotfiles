@@ -121,8 +121,8 @@ if [ ! $UPDATE ]; then
 	echo -e '\033[38;5;242m## Installing Oh my zsh ##\033[0m'
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-	## Powerline9k theme
-	git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+	## Powerline10k theme
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 	## Install zsh as default shell
 	if ! grep -Fxq "/bin/zsh" /etc/shells
