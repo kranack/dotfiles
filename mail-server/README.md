@@ -307,15 +307,15 @@ Use [Mail Tester] website to check your configuration.
 [Postfix + Dovecot + Rainloop install](https://mondedie.fr/d/5750-tuto-installer-un-serveur-de-mail-avec-postfix-dovecot-et-rainloop/2)  
 [Optimize e-mail send on OVH](https://docs.ovh.com/fr/dedicated/optimiser-envoi-emails/)
 
-[Postfix Documentation]: (http://www.postfix.org/documentation.html)
-[Postfix Wikipedia]: (https://en.wikipedia.org/wiki/Postfix_(software))
-[Dovecot Documentation]: (https://doc.dovecot.org/)
-[Dovecot Wikipedia]: (https://en.wikipedia.org/wiki/Dovecot_(software))
-[SpamAssassin Documentation]: (https://spamassassin.apache.org/doc.html)
-[SpamAssassin Wikipedia]: (https://en.wikipedia.org/wiki/Apache_SpamAssassin)
-[OpenDKIM Documentation]: (http://opendkim.org/docs.html)
-[DKIM Wikipedia]: (https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)
-[ClamAV Documentation]: (https://www.clamav.net/documents/clam-antivirus-user-manual)
-[ClamAV Wikipedia]: (https://en.wikipedia.org/wiki/Clam_AntiVirus)
+[Postfix Documentation]: http://www.postfix.org/documentation.html
+[Postfix Wikipedia]: https://en.wikipedia.org/wiki/Postfix_(software)
+[Dovecot Documentation]: https://doc.dovecot.org/
+[Dovecot Wikipedia]: https://en.wikipedia.org/wiki/Dovecot_(software)
+[SpamAssassin Documentation]: https://spamassassin.apache.org/doc.html
+[SpamAssassin Wikipedia]: https://en.wikipedia.org/wiki/Apache_SpamAssassin
+[OpenDKIM Documentation]: http://opendkim.org/docs.html
+[DKIM Wikipedia]: https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail
+[ClamAV Documentation]: https://www.clamav.net/documents/clam-antivirus-user-manual
+[ClamAV Wikipedia]: https://en.wikipedia.org/wiki/Clam_AntiVirus
 
 [Mail Tester]: http://www.mail-tester.com
