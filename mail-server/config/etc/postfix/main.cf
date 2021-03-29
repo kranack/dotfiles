@@ -21,7 +21,8 @@ readme_directory = no
 # fresh installs.
 compatibility_level = 2
 
-
+# Attachement size
+message_size_limit = 52428800
 
 # TLS parameters
 smtpd_use_tls=yes
