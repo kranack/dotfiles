@@ -123,7 +123,7 @@ Copy the file `config/etc/postfix/header_checks` in `/etc/postfix` and use the p
 postmap /etc/postfix/header_checks
 ```
 
-If you don't want to use any aliases for your users, juste comment the lines referring to the files `/etc/postfix/smtpd_sender_login_maps` and `/etc/postfix/virtual` in your `/etc/postfix/main.cf` configuration file.
+If you don't want to use any aliases for your users, only comment the lines referring to the files `/etc/postfix/smtpd_sender_login_maps` and `/etc/postfix/virtual` in your `/etc/postfix/main.cf` configuration file.
 
 Enable the service
 
