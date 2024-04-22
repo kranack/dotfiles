@@ -145,7 +145,7 @@ postmap /etc/postfix/virtual
 ### Dovecot
 
 ```bash
-sudo apt-get install dovecot-core dovecot-imapd
+sudo apt-get install dovecot-core dovecot-imapd dovecot-lmtpd
 ```
 
 You can copy all the files in `config/etc/dovecot` in your `/etc/dovecot` folder.  
